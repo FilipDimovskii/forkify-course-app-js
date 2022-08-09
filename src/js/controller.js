@@ -149,9 +149,6 @@ const controlAddRecipe = async function (newRecipe) {
     addRecipeView.renderError(error.message);
   }
 };
-const newFeature = function () {
-  console.log('Welcome to the application');
-};
 
 // These are subscriber's patterns.
 const init = function () {
@@ -168,6 +165,5 @@ const init = function () {
   paginationView.addHandlerClick(controlPagination);
   // Passing data from controlAddRecipe function to the addHandlerUpload function in addRecipeView.js
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  newFeature();
 };
 init();
